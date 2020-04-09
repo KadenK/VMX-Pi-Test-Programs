@@ -27,7 +27,7 @@ public class Infrared extends TimedRobot {
   @Override
   public void teleopPeriodic() {
 
-    int value = sensor.getValue();
+    double value = sensor.getVoltage();
 
     System.out.println("Value:  " + value);
 
