@@ -4,9 +4,10 @@
     "version": "5.18.3",
     "uuid": "ab676553-b602-441f-a38d-f1296eff6537",
     "mavenUrls": [
-        "http://devsite.ctr-electronics.com/maven/release/"
+        "http://devsite.ctr-electronics.com/maven/release/",
+        "https://repo1.maven.org/maven2/"
     ],
-    "jsonUrl": "http://devsite.ctr-electronics.com/maven/release/com/ctre/phoenix/Phoenix-latest.json",
+    "jsonUrl": "http://kauailabs.com/dist/frc2020/Phoenix-vmx.json",
     "javaDependencies": [
         {
             "groupId": "com.ctre.phoenix",
@@ -32,6 +33,16 @@
                 "linuxx86-64"
             ]
         },
+                {
+            "groupId": "com.kauailabs.vmx.first.phoenix",
+            "artifactId": "phoenix-cci-vmx",
+            "version": "2019.4.1-vmxpi",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "linuxraspbian"
+            ]
+        },
         {
             "groupId": "com.ctre.phoenix",
             "artifactId": "diagnostics",
@@ -52,7 +63,8 @@
             "skipInvalidPlatforms": true,
             "validPlatforms": [
                 "windowsx86-64",
-                "linuxx86-64"
+                "linuxx86-64",
+                "linuxraspbian"
             ]
         },
         {
@@ -77,6 +89,16 @@
                 "windowsx86-64",
                 "linuxx86-64"
             ]
+        },
+        {
+            "groupId": "com.kauailabs.vmx.first.hal",
+            "artifactId": "hal-cpp",
+            "version": "2020.3.2-vmxpi-alpha-2",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "linuxraspbian"
+            ]
         }
     ],
     "cppDependencies": [
@@ -91,7 +113,8 @@
             "binaryPlatforms": [
                 "linuxathena",
                 "windowsx86-64",
-                "linuxx86-64"
+                "linuxx86-64",
+                "linuxraspbian"
             ]
         },
         {
@@ -105,7 +128,8 @@
             "binaryPlatforms": [
                 "linuxathena",
                 "windowsx86-64",
-                "linuxx86-64"
+                "linuxx86-64",
+                "linuxraspbian"
             ]
         },
         {
@@ -119,7 +143,8 @@
             "binaryPlatforms": [
                 "linuxathena",
                 "windowsx86-64",
-                "linuxx86-64"
+                "linuxx86-64",
+                "linuxraspbian"
             ]
         },
         {
@@ -146,7 +171,8 @@
             "skipInvalidPlatforms": true,
             "binaryPlatforms": [
                 "windowsx86-64",
-                "linuxx86-64"
+                "linuxx86-64",
+                "linuxraspbian"
             ]
         },
         {
@@ -174,6 +200,17 @@
                 "linuxathena",
                 "windowsx86-64",
                 "linuxx86-64"
+            ]
+        },
+        {
+            "groupId": "com.kauailabs.vmx.first.hal",
+            "artifactId": "hal-cpp",
+            "version": "2020.3.2-vmxpi-alpha-2",
+            "libName": "CTRE_PhoenixPlatform",
+            "sharedLibrary": true,
+            "skipInvalidPlatforms": true,
+            "binaryPlatforms": [
+                "linuxraspbian"
             ]
         }
     ]
